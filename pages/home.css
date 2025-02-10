@@ -40,12 +40,6 @@
     
 }      
 
-
-
-
-
-
-
 /* Lista de navegación */
 .nav-list {
     font-weight: 500;
@@ -58,9 +52,6 @@
 }
 
 
-
-
-
 /* Enlaces de navegación */
 .nav-item {
     display: block;
@@ -68,6 +59,7 @@
     color: #111827;
     border-radius: 0.25rem;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-item:hover {
@@ -188,6 +180,28 @@ font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 0 5px rgba(30, 132, 73, 0.7);
 }
 
+
+footer {
+    background-color: #0B6623;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    color:black;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+footer a:hover {
+    color: white;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -199,6 +213,6 @@ font-family: Arial, Helvetica, sans-serif;
     }
 }
 
-#title, #dir, #container h1, #container p, #container h2, #container-2 a{
+#title, #dir, #container h1, #container p, #container h2, #container-2 a, footer{
     animation: fadeIn 1s ease-in-out;
 }
