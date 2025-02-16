@@ -65,7 +65,7 @@
 #img{
     position: relative;
     margin: 12px auto;
-    background-image: url('/public/imagenes/asasd2.png');
+    background-image: url('asasd2.png');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -75,7 +75,8 @@
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
-/* Agregar una capa oscura encima de la imagen */
+
+
 #img::before {
     content: "";
     position: absolute;
@@ -84,7 +85,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1; /* Coloca la capa sobre la imagen */
+    z-index: 1; 
 }
 
 #text-banner{
@@ -181,4 +182,19 @@ footer a {
 }
 footer a:hover {
     color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#title,#nav,  #whatsapp, #section, #text-banner, #img, #group, #group label, #group input, footer{
+    animation: fadeIn 1s ease-in-out;
 }

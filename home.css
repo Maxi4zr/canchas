@@ -227,6 +227,6 @@ footer a:hover {
     }
 }
 
-#title, #dir, #container h1, #container p, #container h2, #container-2 a, footer{
+#title, #nav, #dir, #container h1, #container p, #container h2, #container-2 a, footer{
     animation: fadeIn 1s ease-in-out;
 }
