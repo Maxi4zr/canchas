@@ -5,11 +5,13 @@ document.getElementById('whatsapp').addEventListener('submit', function(event) {
     var DNI = document.getElementById('DNI').value; 
     var hora = document.getElementById('hora').value;
 
-    
-    
+    var nombreval = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;    
     var dnival = /^\d{7,9}$/;
 
-    
+    if (nombre === "" || !nombreval.test(nombre)) {
+        alert("Por favor, ingresa un nombre válido (sin números ni caracteres especiales).");
+        return;
+    }
     
     if (!dnival.test(DNI)) {
         alert("Por favor, ingresa un DNI válido (entre 7 y 9 dígitos numéricos).");
